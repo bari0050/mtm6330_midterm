@@ -82,4 +82,12 @@
             font-size: 100px;
         }
     }
+
+    .content {
+        border: 10px solid red;
+
+        .owl {
+            border: 10px solid red;
+        }
+    }
 }
