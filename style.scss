@@ -5,6 +5,7 @@
     header {
         background-color: #9ADBCF !important;
         padding-bottom: 30px;
+        display: flex;
 
         nav {
             display: flex;
@@ -34,13 +35,31 @@
             }
         }
 
-        .title {
+        .name {
+            width: 100%;
             display: flex;
             flex-direction: column;
-            align-items: center;
+            color: #05302C;
+            margin-right: 20px;
 
-            h2 {
-                font-weight: normal;
+            .name1 {
+                display: flex;
+                justify-content: flex-end;
+
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+            .name2 {
+                display: flex;
+                justify-content: flex-end;
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+
             }
         }
     }
@@ -84,10 +103,61 @@
     }
 
     .content {
-        border: 10px solid red;
+        background-image: url(images/background.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
 
-        .owl {
-            border: 10px solid red;
+        .photos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+            .photo {
+                writing-mode:vertical-rl;
+                border-top: 10px solid #027368;
+                margin: 50px;
+                padding: 10px;
+    
+                h1 {
+                    color: #05302C;
+                    font-size: 70px;
+                    letter-spacing: 10px;
+                    padding: 10px;
+                }
+            }
+    
+            .imgs1 {
+                width: 30%;
+                .owl {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 40px 0 0;
+                }
+    
+                .imgs2 {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    img {
+                        margin-top: 50px;
+                        width: 45%;
+                        height: auto;
+                        align-self: center;
+                    }
+                }
+            }
+    
+            img:last-child {
+                align-self: center;
+                margin-left: 40px;
+                width: 30%;
+                height: 620px;
+            }
+        }
+
+        .videos {
+            
         }
     }
 }
