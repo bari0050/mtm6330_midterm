@@ -5,6 +5,7 @@
 * header {
   background-color: #9ADBCF !important;
   padding-bottom: 30px;
+  display: flex;
 }
 * header nav {
   display: flex;
@@ -29,12 +30,26 @@
   color: black;
   text-decoration: none;
 }
-* header .title {
+* header .name {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  color: #05302C;
+  margin-right: 20px;
 }
-* header .title h2 {
+* header .name .name1 {
+  display: flex;
+  justify-content: flex-end;
+}
+* header .name .name1 h1 {
+  font-size: 50px;
+}
+* header .name .name2 {
+  display: flex;
+  justify-content: flex-end;
+}
+* header .name .name2 h2 {
+  font-size: 30px;
   font-weight: normal;
 }
 * .about {
@@ -68,6 +83,53 @@
 }
 * .banner h1 {
   font-size: 100px;
+}
+* .content {
+  background-image: url(images/background.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+* .content .photos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+* .content .photos .photo {
+  writing-mode: vertical-rl;
+  border-top: 10px solid #027368;
+  margin: 50px;
+  padding: 10px;
+}
+* .content .photos .photo h1 {
+  color: #05302C;
+  font-size: 70px;
+  letter-spacing: 10px;
+  padding: 10px;
+}
+* .content .photos .imgs1 {
+  width: 30%;
+}
+* .content .photos .imgs1 .owl {
+  width: 100%;
+  height: auto;
+  margin: 0 40px 0 0;
+}
+* .content .photos .imgs1 .imgs2 {
+  display: flex;
+  justify-content: space-between;
+}
+* .content .photos .imgs1 .imgs2 img {
+  margin-top: 50px;
+  width: 45%;
+  height: auto;
+  align-self: center;
+}
+* .content .photos img:last-child {
+  align-self: center;
+  margin-left: 40px;
+  width: 30%;
+  height: 620px;
 }
 
 /*# sourceMappingURL=style.css.map */
