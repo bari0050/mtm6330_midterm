@@ -98,7 +98,7 @@
 * .content .photos .photo {
   writing-mode: vertical-rl;
   border-top: 10px solid #027368;
-  margin: 50px;
+  margin: 50px 50px 0 0;
   padding: 10px;
 }
 * .content .photos .photo h1 {
@@ -130,6 +130,31 @@
   margin-left: 40px;
   width: 30%;
   height: 620px;
+}
+* .content .videos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+* .content .videos .vid {
+  width: 55%;
+}
+* .content .videos .vid img {
+  width: 100%;
+  height: 500px;
+}
+* .content .videos .video {
+  writing-mode: vertical-rl;
+  border-top: 10px solid #027368;
+  margin: 50px 0 0 50px;
+  padding: 10px;
+}
+* .content .videos .video h1 {
+  color: #05302C;
+  font-size: 70px;
+  letter-spacing: 10px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
