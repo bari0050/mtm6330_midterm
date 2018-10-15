@@ -7,8 +7,13 @@
     <title>BARI0050 - Midterm Project</title>
     <link rel="stylesheet" href="css/min/style.css">
 </head>
-
+<style>
+    html {
+        scroll-behavior: smooth;
+    }
+</style>
 <body>
+    <a name="top"></a>
     <header>
         <nav>
             <img src="images/filler_image.jpg" href="" alt="filler_image">
@@ -47,13 +52,13 @@
                 <h1>PHOTOGRAPHY</h1>
             </div>
             <div class="imgs1">
-                <img  class="owl" src="images/owl.jpg" alt="owl">
+                <img  class="alaskanMountain" src="images/alaskanMountain.jpg" alt="owl">
                 <div class="imgs2">
-                    <img src="images/filler_image.jpg" alt="">
-                    <img src="images/filler_image.jpg" alt="">
+                    <img src="images/branch.jpg" alt="">
+                    <img src="images/eye.jpg" alt="">
                 </div>
             </div>
-                <img src="images/filler_image.jpg" alt="">
+                <img src="images/owl.jpg" alt="">
         </div>
         <div class="videos">
             <div class="vid">
@@ -64,7 +69,26 @@
             </div>
         </div>
         <div class="contact">
+            <div class="con">
+                <h1>CONTACT</h1>
+            </div>
+            <form>
+                <fieldset>
+                    <label for="name">Name</label>
+                    <input type="text" placeholder="Jane Doe" class="info">
+                </fieldset>
+                <fieldset>
+                    <label for="email">E-Mail</label>
+                    <input type="text" placeholder="jane.doe@mail.ca" class="info">
+                </fieldset>
+                <fieldset>
+                    <label for="message">Message</label>
+                    <textarea class="info" cols="30" rows="10" placeholder="What can I help you with?"></textarea>
+                </fieldset>
+                <input type="submit" value="Submit" class="submit">
+            </form>
         </div>
-    </div>   
+    </div>
+    <div class="top"><a href="#top">^</a></div>
 </body>
 </html>

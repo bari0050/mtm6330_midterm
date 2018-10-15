@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    font-family: OpenSans-Light;
+
+    header {
+        background-color: #9ADBCF !important;
+        padding-bottom: 30px;
+        display: flex;
+
+        nav {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                height: 80px;
+                width: auto;
+                margin: 10px 0 0 10px;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: row;
+                align-items: top;
+                list-style: none;
+                padding: 10px;
+
+                li {
+                    margin: 0 20px; 
+
+                    a {
+                        color: black;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+
+        .name {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            color: #05302C;
+            margin-right: 20px;
+
+            .name1 {
+                display: flex;
+                justify-content: flex-end;
+
+                h1 {
+                    font-size: 50px;
+                }
+            }
+
+            .name2 {
+                display: flex;
+                justify-content: flex-end;
+
+                h2 {
+                    font-size: 30px;
+                    font-weight: normal;
+                }
+
+            }
+        }
+    }
+
+    .about {
+        background-color: #FCFCF9;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 100px 100px;
+
+        .aboutme {
+            border-left: 1px solid #027368;
+            padding-left: 10px;
+            margin-right: 100px;
+            width: 35%;
+        }
+
+        img {
+            height: auto;
+            width: 35%;
+        }
+    }
+
+    .banner {
+        background-color: #FAD1D1;
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: #05302C;
+
+        p {
+            font-size: 20px;
+            transform: translateY(30px);
+        }
+
+        h1 {
+            font-size: 100px;
+        }
+    }
+
+    .content {
+        background-image: url("../../images/background.jpg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+        .photos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+    
+            .photo {
+                writing-mode: vertical-rl;
+                border-top: 10px solid #027368;
+                margin: 50px 50px 0 0;
+    
+                h1 {
+                    color: #05302C;
+                    font-size: 70px;
+                    letter-spacing: 10px;
+                    padding: 20px;
+                }
+            
+            }
+    
+            .imgs1 {
+                width: 30%;
+                
+                .alaskanMountain {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 40px 0 0;
+                }
+    
+                .imgs2 {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    img {
+                        margin-top: 50px;
+                        width: 45%;
+                        height: auto;
+                        align-self: center;
+                    }
+                }
+            }
+    
+            img:last-child {
+                align-self: center;
+                margin-left: 40px;
+                width: 30%;
+                height: auto;
+            }
+        }
+
+        .videos {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            .vid {
+                width: 55%;
+                margin-top: 50px;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .video {
+                writing-mode: vertical-rl;
+                border-top: 10px solid #027368;
+                margin: 50px 0 0 50px;
+
+                h1 {
+                    color: #05302C;
+                    font-size: 70px;
+                    letter-spacing: 10px;
+                    padding: 20px;
+                }
+            }
+        }
+        .contact {
+            width: 80%;
+            margin: auto;
+
+            .con {
+                border-left: 10px solid #027368;
+                margin: 80px 0 40px 0;
+    
+                h1 {
+                    color: #05302C;
+                    font-size: 70px;
+                    letter-spacing: 10px;
+                    padding: 0 0 0 20px;
+                    font-size: 40px;
+                    letter-spacing: 8px;
+                }
+            }
+
+            form {
+                width: 80%;
+                height: auto;
+                margin: auto;
+                border: 30px solid #FAEFED;
+                background-color: #FCFCF9;
+                padding: 40px;
+
+                fieldset {
+                    border: none;
+                    margin: 30px 0;
+                    display: flex;
+                    align-items: center;
+
+                    .info {
+                        width: 100%;
+                        padding: 15px 5px;
+                        margin-top: 10px;
+                    }
+                }
+
+                fieldset:first-child {
+                    float: left;
+                    width: 40%;
+                }
+
+                fieldset:nth-child(2) {
+                    float: right;
+                    width: 40%;
+                }
+
+                fieldset:nth-child(3) {
+                    width: 100%;
+                }
+
+                .submit {
+                    margin: auto;
+                    width: 100px;
+                }
+            }
+        }
+    }
+
+    .top {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        height: 60px;
+        width: 60px;
+        border-radius: 60px;
+        background-color: #666;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        a {
+            color: #aaa;
+            font-weight: bold;
+            font-size: 40px;
+            text-decoration: none;
+        }
+    }
+
+    .top:active {
+        background-color: #aaa;
+        a {
+            color: #666
+        }
+    }
+}

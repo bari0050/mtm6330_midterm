@@ -67,7 +67,7 @@
     * .banner h1 {
       font-size: 100px; }
   * .content {
-    background-image: url(images/background.png);
+    background-image: url("../../images/background.jpg");
     background-repeat: no-repeat;
     background-size: 100%; }
     * .content .photos {
@@ -78,16 +78,15 @@
       * .content .photos .photo {
         writing-mode: vertical-rl;
         border-top: 10px solid #027368;
-        margin: 50px 50px 0 0;
-        padding: 10px; }
+        margin: 50px 50px 0 0; }
         * .content .photos .photo h1 {
           color: #05302C;
           font-size: 70px;
           letter-spacing: 10px;
-          padding: 10px; }
+          padding: 20px; }
       * .content .photos .imgs1 {
         width: 30%; }
-        * .content .photos .imgs1 .owl {
+        * .content .photos .imgs1 .alaskanMountain {
           width: 100%;
           height: auto;
           margin: 0 40px 0 0; }
@@ -118,10 +117,69 @@
       * .content .videos .video {
         writing-mode: vertical-rl;
         border-top: 10px solid #027368;
-        margin: 50px 0 0 50px;
-        padding: 10px; }
+        margin: 50px 0 0 50px; }
         * .content .videos .video h1 {
           color: #05302C;
           font-size: 70px;
           letter-spacing: 10px;
-          padding: 10px; }
+          padding: 20px; }
+    * .content .contact {
+      width: 80%;
+      margin: auto; }
+      * .content .contact .con {
+        border-left: 10px solid #027368;
+        margin: 80px 0 40px 0; }
+        * .content .contact .con h1 {
+          color: #05302C;
+          font-size: 70px;
+          letter-spacing: 10px;
+          padding: 0 0 0 20px;
+          font-size: 40px;
+          letter-spacing: 8px; }
+      * .content .contact form {
+        width: 80%;
+        height: auto;
+        margin: auto;
+        border: 30px solid #FAEFED;
+        background-color: #FCFCF9;
+        padding: 40px; }
+        * .content .contact form fieldset {
+          border: none;
+          margin: 30px 0;
+          display: flex;
+          align-items: center; }
+          * .content .contact form fieldset .info {
+            width: 100%;
+            padding: 15px 5px;
+            margin-top: 10px; }
+        * .content .contact form fieldset:first-child {
+          float: left;
+          width: 40%; }
+        * .content .contact form fieldset:nth-child(2) {
+          float: right;
+          width: 40%; }
+        * .content .contact form fieldset:nth-child(3) {
+          width: 100%; }
+        * .content .contact form .submit {
+          margin: auto;
+          width: 100px; }
+  * .top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+    background-color: #666;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    * .top a {
+      color: #aaa;
+      font-weight: bold;
+      font-size: 40px;
+      text-decoration: none; }
+  * .top:active {
+    background-color: #aaa; }
+    * .top:active a {
+      color: #666; }
