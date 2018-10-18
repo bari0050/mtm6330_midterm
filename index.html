@@ -7,14 +7,20 @@
     <title>BARI0050 - Midterm Project</title>
     <link rel="stylesheet" href="css/min/style.css"> 
 </head>
+
 <style>
+    /* This allows the browser to scroll smoothly when clicking on specific html tags that bring us to different part of the website. It gives us a smoother design. This was my solution to avoid using JavaScript. */
     html {
         scroll-behavior: smooth;
     }
 </style>
+
 <body>
+    <!-- Here is the tag to show my code where the top of the page is. When someone clicks the "top" button, it will scroll us back up to this point. -->
     <a name="top"></a>
+
     <header>
+        <!-- Navigation bar: including logo and four other sections to my website. They will not lead to other HTML pages as I only have one page on my website. They simply scroll us down to the desired website section. -->
         <nav>
             <img src="images/logo.png" href="" alt="logo">
             <ul>
@@ -24,6 +30,8 @@
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
+
+        <!-- Title -->
         <div class="name">
             <div class="name1">
                 <h1>CATHERINE BARIL</h1>
@@ -33,25 +41,35 @@
             </div>
         </div>
     </header>
+
+    <!-- This is the about section of the website -->
+    <!-- We see that there is a tag here. This will tell us that, when clicking on "about" in the nav bar, it will take us to this section of the website. -->
     <a name="about"></a>
     <div class="about">
+        <!-- A small descriptive paragraph -->
         <div class="aboutme">
             <p>As a student at Algonquin College, my passion is photography and videography. Please take a look at my work down below and feel free to contact me with any requests!</p>
         </div>
         <img src="images/self.JPG" alt="self-portrait">
     </div>
 
+    <!-- Here is a banner separating parts of the website. -->
     <div class="banner">
         <p>lets do something</p>
         <h1>BIG</h1>
     </div>
 
+    <!-- Here is the bulk of the website -->
     <div class="content">
+
+        <!-- Here is the photography section. We see that there is a tag here. This will tell us that, when clicking on "photography" in the nav bar, it will take us to this section of the website. -->
         <a name="photo"></a>
         <div class="photos">
+            <!-- Title -->
             <div class="photo">
                 <h1>PHOTOGRAPHY</h1>
             </div>
+            <!-- All pictures; this section uses so many divs because it allowed me to place all the pictures in the desired positions on the page. -->
             <div class="pics">
                 <div class="imgs1">
                     <img  class="alaskanMountain" src="images/alaskanMountain.jpg" alt="alaskanMountain">
@@ -63,22 +81,30 @@
                 <img src="images/owl.jpg" alt="owl">
             </div>
         </div>
+
+         <!-- Here is the videography section. We see that there is a tag here. This will tell us that, when clicking on "videography" in the nav bar, it will take us to this section of the website. -->
         <a name="video"></a>
         <div class="videos">
+            <!-- I used an outside source to insert a gif. This allows users to visualize my video without making the website too slow. It also make the website more dynamic. -->
             <div class="vid">
                 <img src="https://media.giphy.com/media/w8DKapFA1w2MYC8qlw/giphy.gif" alt="video">
             </div>
+            <!-- Title -->
             <div class="video">
                 <h1>VIDEOGRAPHY</h1>
             </div>
         </div>
+
+        <!-- Contact form -->
         <a name="contact"></a>
         <div class="contact">
+            <!-- title -->
             <div class="con">
                 <h1>CONTACT</h1>
             </div>
             <form>
                 <p>Like what you see? Send me a message and I'll get back to you right away!</p>
+                <!-- Under each fieldset, there is a different field to fill out: name, e-mail, message, and submit button. -->
                 <fieldset>
                     <label for="name">Name</label>
                     <input type="text" placeholder="Jane Doe" class="info">
@@ -94,7 +120,10 @@
                 <input type="submit" value="Submit" class="submit">
             </form>
         </div>
+
+        <!-- Footer -->
         <footer>
+            <!-- Name and logo -->
             <div class="footer">
                 <h1>Catherine Baril</h1>
                 <p>Photography</p>
@@ -102,6 +131,8 @@
             <img src="images/logo.png" alt="logo">
         </footer>
     </div>
+
+    <!-- Here is the button for the "top button", located on the bottom right corner of the website. -->
     <div class="top"><a href="#top">^</a></div>
 
 </body>

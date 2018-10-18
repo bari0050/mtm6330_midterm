@@ -1,22 +1,27 @@
+// Here are all variables used
 $background: #FCFCF9;
 $background-2: #FAEFED;
 $background-3: #9ADBCF;
-$font-color: #05302C;
+$font: #05302C;
+$border: #027368;
 
+
+// All stylings are below, written in sass language
 * {
     margin: 0;
     font-family: OpenSans-Light;
 
+    // Here is the styling for the header
     header {
         background-color: $background-3;
         padding-bottom: 30px;
         display: flex;
 
-        nav {
+        nav { // Navigation bar
             display: flex;
             flex-direction: row;
 
-            img {
+            img { // Logo
                 height: 80px;
                 width: 80px;
                 margin: 10px 0 0 10px;
@@ -40,11 +45,11 @@ $font-color: #05302C;
             }
         }
 
-        .name {
+        .name { // Title
             width: 100%;
             display: flex;
             flex-direction: column;
-            color: $font-color;
+            color: $font;
             margin-right: 20px;
 
             .name1 {
@@ -64,38 +69,37 @@ $font-color: #05302C;
                     font-size: 30px;
                     font-weight: normal;
                 }
-
             }
         }
     }
 
-    .about {
+    .about { // Styling for the About section
         background-color: $background;
         display: flex;
         align-items: center;
         justify-content: center;
         padding: 100px 100px;
 
-        .aboutme {
-            border-left: 1px solid #027368;
+        .aboutme { // paragraph
+            border-left: 1px solid $border;
             padding-left: 10px;
             margin-right: 100px;
             width: 35%;
         }
 
-        img {
+        img { // Image
             height: auto;
             width: 35%;
         }
     }
 
-    .banner {
+    .banner { // Banner to break up page
         background-color: #FAD1D1;
         padding: 20px 0;
         display: flex;
         flex-direction: column;
         align-items: center;
-        color: $font-color;
+        color: $font;
 
         p {
             font-size: 20px;
@@ -107,24 +111,24 @@ $font-color: #05302C;
         }
     }
 
-    .content {
+    .content { // Added a background image to allow wanted background shapes
         background-image: url("../../images/background.jpg");
         background-repeat: repeat-y;
         background-size: 100%;
 
-        .photos {
+        .photos { // div with photo gallery
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
-    
-            .photo {
+            
+            .photo { // Title for photo gallery
                 writing-mode: vertical-rl;
-                border-top: 10px solid #027368;
+                border-top: 10px solid $border;
                 margin: 50px 0 0 50px;
     
                 h1 {
-                    color: $font-color;
+                    color: $font;
                     font-size: 70px;
                     letter-spacing: 10px;
                     padding: 20px;
@@ -132,7 +136,7 @@ $font-color: #05302C;
             
             }
             
-            .pics {
+            .pics { // four pictures
                 display: flex;
                 width: 100%;
                 align-items: center;
@@ -169,13 +173,13 @@ $font-color: #05302C;
             }
         }
 
-        .videos {
+        .videos { // Video section
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
 
-            .vid {
+            .vid { // styling for gif
                 width: 55%;
                 margin-top: 50px;
 
@@ -185,13 +189,13 @@ $font-color: #05302C;
                 }
             }
 
-            .video {
+            .video { // styling for video title
                 writing-mode: vertical-rl;
-                border-top: 10px solid #027368;
+                border-top: 10px solid $border;
                 margin: 50px 0 0 50px;
 
                 h1 {
-                    color: $font-color;
+                    color: $font;
                     font-size: 70px;
                     letter-spacing: 10px;
                     padding: 20px;
@@ -199,20 +203,20 @@ $font-color: #05302C;
             }
         }
 
-        .contact {
+        .contact { // Contact section
             width: 50%;
             margin: auto;
             
-            p {
+            p { // small description
                 margin-bottom: 10px;
             }
 
-            .con {
-                border-left: 10px solid #027368;
+            .con { // title
+                border-left: 10px solid $border;
                 margin: 80px 0 40px 0;
     
                 h1 {
-                    color: $font-color;
+                    color: $font;
                     letter-spacing: 10px;
                     padding: 0 0 0 20px;
                     font-size: 40px;
@@ -220,7 +224,7 @@ $font-color: #05302C;
                 }
             }
 
-            form {
+            form { // Contact Form
                 width: 80%;
                 height: auto;
                 margin: auto;
@@ -228,7 +232,7 @@ $font-color: #05302C;
                 background-color: $background;
                 padding: 40px;
 
-                fieldset {
+                fieldset { // Each section for contact form
                     border: none;
                     margin: 30px 0;
                     display: flex;
@@ -249,23 +253,18 @@ $font-color: #05302C;
                 fieldset:nth-child(3) {
                     float: right;
 
-                    @media all and (min-width: 1020px) {
+                    @media all and (min-width: 1020px) { // Somehow, this styling was not being applied without the use of !important. I added it to an @media to allow the styling to be applied but to avoid having it affect mobile.
                         width: 40% !important;
                     }
                 }
 
-                fieldset:nth-child(3) {
-                    width: 100%;
-                }
-
                 .submit {
-                    margin: auto;
                     width: 100px;
                 }
             }
         }
 
-        footer {
+        footer { // footer styling
             background-color: $background-3;
             display: flex;
             flex-direction: row;
@@ -274,7 +273,7 @@ $font-color: #05302C;
             height: 110px;
             margin-top: 80px;
     
-            img {
+            img { // logo
                 width: 80px;
                 height: 80px;
             }
@@ -288,7 +287,7 @@ $font-color: #05302C;
         }
     }
 
-    .top {
+    .top { // Button to top
         position: fixed;
         bottom: 30px;
         right: 30px;
@@ -300,7 +299,7 @@ $font-color: #05302C;
         align-items: center;
         justify-content: center;
 
-        a {
+        a { // text withing button to top
             color: #aaa;
             font-weight: bold;
             font-size: 40px;
@@ -308,7 +307,7 @@ $font-color: #05302C;
         }
     }
 
-    .top:active {
+    .top:active { // effect when button is clicked
         background-color: #aaa;
         a {
             color: #666
@@ -316,13 +315,14 @@ $font-color: #05302C;
     }
 }
 
-@media all and (max-width: 1020px) {
-    header {
+@media all and (max-width: 1020px) { // Styling for screens smaller than 1020px
+
+    header { // styling for header
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        nav {
+        nav { // navigation bar
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -340,46 +340,46 @@ $font-color: #05302C;
                 }
             }
 
-            img {
+            img { // logo
                 width: 60%;
                 height: auto;
             }
         }
 
-        .name {
+        .name { // title
             align-items: center;
             transform: translateY(-80px);
         }
     }
 
-    .about {
+    .about { // about section
         display: flex;
         flex-direction: column;
 
-        .aboutme {
+        .aboutme { // paragraph
             width: 80%;
             font-size: 20px;
-            border-left: 5px solid #027368;
+            border-left: 5px solid $border;
             margin-bottom: 30px;
         }
 
-        img {
+        img { // self portrait
             height: auto;
             width: 500px;
         }
     }
 
     .content {
-        .photos {
+        .photos { // photo gallery
             height: auto;
             display: flex;
             align-items: flex-start;
 
-            .photo {
+            .photo { // title
                 margin: 50px;
             }
             
-            .pics {
+            .pics { // pictures
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -408,30 +408,32 @@ $font-color: #05302C;
             }
         }
 
-        .videos {
-            .video {
+        .videos { // video section
+            .video { // title
                 margin-right: 50px;
             }
 
-            .vid {
+            .vid { // gif
                 width: 100%;
             }
         }
 
-        .contact {
+        .contact { // contact section
             width: 90%;
             margin: auto;
-            form {
+
+            form { // contact form
                 fieldset:nth-child(2), fieldset:nth-child(3) {
                     width: auto;
                     float: none;
                 }
             }
         }
-        footer {
+
+        footer { // footer section
         height: 200px;
 
-            .footer {
+            .footer { // text
                 h1 {
                     font-size: 50px;
                 }
@@ -440,7 +442,7 @@ $font-color: #05302C;
                 }
             }
 
-            img {
+            img { //logo
                 height: 120px;
                 width: 120px;
             }

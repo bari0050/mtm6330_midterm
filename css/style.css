@@ -166,10 +166,7 @@
           @media all and (min-width: 1020px) {
             * .content .contact form fieldset:nth-child(3) {
               width: 40% !important; } }
-        * .content .contact form fieldset:nth-child(3) {
-          width: 100%; }
         * .content .contact form .submit {
-          margin: auto;
           width: 100px; }
     * .content footer {
       background-color: #9ADBCF;
